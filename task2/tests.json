@@ -1,0 +1,238 @@
+[
+    {
+        "name": "query_newjeans_kr",
+        "pada": {
+            "query_name": "newjeans.kr",
+            "dns_server": "localhost",
+            "port": 153,
+            "query": false,
+            "response": false,
+            "rcode": null,
+            "txid": null,
+            "ipaddr": null
+        },
+        "settings": {
+            "transaction_id":  1234,
+            "response_delay": -1,
+            "port": 153,
+            "ns_port": 0,
+            "pada": null
+        }
+    },
+    {
+        "name": "response_facebook_com",
+        "pada": {
+            "query_name": "facebook.com",
+            "dns_server": "localhost",
+            "port": 253,
+            "query": false,
+            "response": true,
+            "rcode": 0,
+            "txid": 1234,
+            "ipaddr": "1.1.1.1"
+        },
+        "settings": {
+            "transaction_id":  1234,
+            "response_delay": -1,
+            "port": 253,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "nxdomain_google_com",
+        "pada": {
+            "query_name": "google.com",
+            "dns_server": "localhost",
+            "port": 353,
+            "query": false,
+            "response": true,
+            "rcode": 3,
+            "txid": null,
+            "ipaddr": null
+        },
+        "settings": {
+            "transaction_id":  1234,
+            "response_delay": -1,
+            "port": 353,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "response_with_authority_ns_record",
+        "pada": {
+            "query_name": "hanni.hybecorp.com",
+            "dns_server": "localhost",
+            "port": 453,
+            "query": false,
+            "response": true,
+            "rcode": 0,
+            "txid": 4321,
+            "ipaddr": null,
+            "ns": "ns1.hybecorp.com"
+        },
+        "settings": {
+            "transaction_id": 4321,
+            "response_delay": -1,
+            "port": 453,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "response_with_answer_and_ns_record",
+        "pada": {
+            "query_name": "danielle.hybecorp.com",
+            "dns_server": "localhost",
+            "port": 553,
+            "query": false,
+            "response": true,
+            "rcode": 0,
+            "txid": 9999,
+            "ipaddr": "192.0.2.55",
+            "ns": "ns2.hybecorp.com"
+        },
+        "settings": {
+            "transaction_id": 9999,
+            "response_delay": -1,
+            "port": 553,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "query_with_custom_txid_and_port",
+        "pada": {
+            "query_name": "minji.hybecorp.com",
+            "dns_server": "localhost",
+            "port": 653,
+            "query": true,
+            "response": false,
+            "rcode": null,
+            "txid": 5678,
+            "ipaddr": null
+        },
+        "settings": {
+            "transaction_id": 5678,
+            "response_delay": -1,
+            "port": 653,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "response_with_rcode_15_max",
+        "pada": {
+            "query_name": "haerin.hybecorp.com",
+            "dns_server": "localhost",
+            "port": 753,
+            "query": false,
+            "response": true,
+            "rcode": 15,
+            "txid": 8888,
+            "ipaddr": null
+        },
+        "settings": {
+            "transaction_id": 8888,
+            "response_delay": -1,
+            "port": 753,
+            "ns_port": 0
+        }
+    },
+     {
+        "name": "basic_query_example_com",
+        "pada": {
+            "query_name": "example.com",
+            "dns_server": "localhost",
+            "port": 853,
+            "query": true,
+            "response": false,
+            "rcode": null,
+            "txid": null,
+            "ipaddr": null,
+            "ns_record": null
+        },
+        "settings": {
+            "transaction_id": 0,
+            "response_delay": -1,
+            "port": 853,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "response_with_ip",
+        "pada": {
+            "query_name": "test.com",
+            "dns_server": "localhost",
+            "port": 5053,
+            "query": false,
+            "response": true,
+            "rcode": 0,
+            "txid": 1111,
+            "ipaddr": "8.8.8.8",
+            "ns_record": null
+        },
+        "settings": {
+            "transaction_id": 1111,
+            "response_delay": -1,
+            "port": 5053,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "response_with_ns",
+        "pada": {
+            "query_name": "test.com",
+            "dns_server": "localhost",
+            "port": 5054,
+            "query": false,
+            "response": true,
+            "rcode": 0,
+            "txid": 2222,
+            "ipaddr": null,
+            "ns_record": "ns.test.com"
+        },
+        "settings": {
+            "transaction_id": 2222,
+            "response_delay": -1,
+            "port": 5054,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "nxdomain_response_test",
+        "pada": {
+            "query_name": "fake.test",
+            "dns_server": "localhost",
+            "port": 5055,
+            "query": false,
+            "response": true,
+            "rcode": 3,
+            "txid": 3333,
+            "ipaddr": null,
+            "ns_record": null
+        },
+        "settings": {
+            "transaction_id": 3333,
+            "response_delay": -1,
+            "port": 5055,
+            "ns_port": 0
+        }
+    },
+    {
+        "name": "query_custom_txid",
+        "pada": {
+            "query_name": "example.org",
+            "dns_server": "localhost",
+            "port": 953,
+            "query": true,
+            "response": false,
+            "rcode": null,
+            "txid": 1234,
+            "ipaddr": null,
+            "ns_record": null
+        },
+        "settings": {
+            "transaction_id": 1234,
+            "response_delay": -1,
+            "port": 953,
+            "ns_port": 0
+        }
+    }
+]
